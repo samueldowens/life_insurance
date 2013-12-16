@@ -1,11 +1,9 @@
-<div class="form-parent">
 <%= form_for @insurance_query, url: {action: "create"}, html: {class: "nifty-form"} do |f| %>
-  <%= f.label :total_annual_income, "Total Annual Income", :class => 'form-label' %><br>
+  <%= f.label :total_annual_income, "Total Annual Income <a id='remote-content-menu' href='#remote-content-menu' class='form-label sidr-tag'>?</a>".html_safe, :class => 'form-label' %><br>
   <%= f.text_field :total_annual_income, :class => 'form-field' %><br>
-  <%= f.label :savings, "Savings", :class => 'form-label' %><br>
+  <%= f.label :savings, "Savings <a id='remote-content-menu' href='#remote-content-menu' class='form-label sidr-tag'>?</a>".html_safe, :class => 'form-label' %><br>  
   <%= f.text_field :savings, :class => 'form-field' %><br>
-  <%= f.label :saved_for_retirement, "Saved For Retirement?", :class => 'form-label' %><br>  
+  <%= f.label :saved_for_retirement, "Saved For Retirement? <a id='remote-content-menu' href='#remote-content-menu' class='form-label sidr-tag'>?</a>".html_safe, :class => 'form-label' %><br>  
   <%= f.text_field :saved_for_retirement, :class => 'form-field' %><br>
   <%= f.submit "Submit" %>
 <% end %>
-</div>
