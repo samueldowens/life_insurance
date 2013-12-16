@@ -34,17 +34,9 @@ end
 
 gem 'foundation-rails'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'pry'
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'sidr-rails'
 
 group :test, :development do
   gem "rspec-rails"

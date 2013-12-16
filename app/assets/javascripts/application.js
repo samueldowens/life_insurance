@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require foundation
 //= require_tree .
+//= require jquery.sidr
 $(function(){ $(document).foundation(); });
