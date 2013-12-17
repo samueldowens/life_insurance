@@ -10,6 +10,6 @@
  *
  *= require_self
  *= require foundation_and_overrides
-
+ *= require jquery.sidr.dark
  *= require_tree .
  */

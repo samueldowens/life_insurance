@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.sidr
 //= require foundation
 //= require_tree .
-//= require jquery.sidr
 $(function(){ $(document).foundation(); });

@@ -1,5 +1,19 @@
 body {
-background-color: rgb(45,155,154);
+background-color: rgb(105,201,201);
+}
+
+.page-header {
+  left: 50%;
+  right: 50%;
+  margin-top: 150px;
+  margin-left: 490px;
+  color: white;
+}
+
+.button {
+  border-radius: 10px;
+  margin-left: 55px;
+  background-color: rgb(6,93,91);
 }
 
 .nifty-form {
@@ -9,7 +23,7 @@ background-color: rgb(45,155,154);
    left: 50%;
    top: 50%; 
    margin-left: -150px;
-   margin-top: 150px; 
+   margin-top: 50px; 
 }
 
 .form-label {
@@ -19,8 +33,24 @@ background-color: rgb(45,155,154);
 
 .form-field {
   width: 80% !important;
+  border-radius: 10px !important;
 }
 
-.sidr-tag {
+#sidr-first-content, #sidr-second-content, #sidr-third-content {
+  background: rgb(6,93,91);
+  -webkit-box-shadow:inset 0 0 5px 5px rgb(6,93,91);
+  box-shadow:inset 0 0 5px 5px rgb(6,93,91);
+}
 
+.sidr-class-bar-header {
+  text-align: center;
+  font-size: 14px;
+   margin-left: 35px !important;
+   margin-right: 25px !important;
+}
+
+.sidr-class-bar-content {
+   margin-left: 35px !important;
+   margin-right: 25px !important;
+   font-size: 10px;
 }
