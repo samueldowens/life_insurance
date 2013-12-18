@@ -1,35 +1,19 @@
-<h5 class="page-header">Income and Savings First...</h5>
+
 
 <%= form_for @insurance_query, url: {action: "create"}, html: {class: "nifty-form"} do |f| %>
+  <%= f.label :total_annual_income, 'Income & Savings First...', class: 'page-header' %><br>
   <%= f.label :total_annual_income, 
-  "Total Annual Income <a id='first-menu' href='#first-content-menu' class='form-label sidr-tag'>?</a>".html_safe,
-   :class => 'form-label' %><br>
+  "Total Annual Income <a id='first-menu' href='#first-content-menu' class='form-label sidr-tag'><i class='fi-info small'></i></a>".html_safe,
+   class: 'form-label' %><br>
   <%= f.text_field :total_annual_income, class: 'form-field' %><br>
   <%= f.label :savings,
-   "Savings <a id='second-menu' href='#second-content-menu' class='form-label sidr-tag'>?</a>".html_safe,
+   "Savings <a id='second-menu' href='#second-content-menu' class='form-label sidr-tag'><i class='fi-info small'></i></a>".html_safe,
     :class => 'form-label' %><br>  
   <%= f.text_field :savings, class: 'form-field' %><br>
   <%= f.label :saved_for_retirement,
-   "Saved For Retirement <a id='third-menu' href='#third-content-menu' class='form-label sidr-tag'>?</a>".html_safe, :class => 'form-label' %><br>  
+   "Saved For Retirement <a id='third-menu' href='#third-content-menu' class='form-label sidr-tag'><i class='fi-info small'></i></a>".html_safe, class: 'form-label' %><br>  
   <%= f.text_field :saved_for_retirement, class: 'form-field' %><br>
   <%= f.submit "Submit", class: 'button [radius round]' %>
 <% end %>
 
 
-<div id="first-content" style="display:none; background-color:rgb(6,93,91);">
-    <br><br><br><br><br><br>
-    <strong class="bar-header">Total Annual Income</strong><br><br>
-    <p class="bar-content">Mlkshk umami Austin, readymade fixie raw denim fashion axe tofu ugh cornhole selvage slow-carb yr selfies. Viral Pinterest banh mi mlkshk chillwave, Echo Park biodiesel Brooklyn typewriter stumptown meggings. Occupy disrupt cred tote bag retro Neutra. Semiotics tote bag banjo, Tonx Pitchfork vegan shabby chic retro Brooklyn. Whatever gentrify tofu, roof party keffiyeh narwhal cliche sartorial fanny pack. Tote bag cardigan YOLO pug whatever hoodie, fanny pack stumptown pour-over. Helvetica fixie gluten-free, hashtag pork belly lo-fi Bushwick Schlitz.</p>
-</div>
-
-<div id="second-content" style="display:none; background-color:rgb(6,93,91);">
-    <br><br><br><br><br><br>
-    <strong class="bar-header">Savings</strong><br><br>
-    <p class="bar-content">Mlkshk umami Austin, readymade fixie raw denim fashion axe tofu ugh cornhole selvage slow-carb yr selfies. Viral Pinterest banh mi mlkshk chillwave, Echo Park biodiesel Brooklyn typewriter stumptown meggings. Occupy disrupt cred tote bag retro Neutra. Semiotics tote bag banjo, Tonx Pitchfork vegan shabby chic retro Brooklyn. Whatever gentrify tofu, roof party keffiyeh narwhal cliche sartorial fanny pack. Tote bag cardigan YOLO pug whatever hoodie, fanny pack stumptown pour-over. Helvetica fixie gluten-free, hashtag pork belly lo-fi Bushwick Schlitz.</p>
-</div>
-
-<div id="third-content" style="display:none; background-color:rgb(6,93,91);">
-    <br><br><br><br><br><br>
-    <strong class="bar-header">Saved For Retirement</strong><br><br>
-    <p class="bar-content">Mlkshk umami Austin, readymade fixie raw denim fashion axe tofu ugh cornhole selvage slow-carb yr selfies. Viral Pinterest banh mi mlkshk chillwave, Echo Park biodiesel Brooklyn typewriter stumptown meggings. Occupy disrupt cred tote bag retro Neutra. Semiotics tote bag banjo, Tonx Pitchfork vegan shabby chic retro Brooklyn. Whatever gentrify tofu, roof party keffiyeh narwhal cliche sartorial fanny pack. Tote bag cardigan YOLO pug whatever hoodie, fanny pack stumptown pour-over. Helvetica fixie gluten-free, hashtag pork belly lo-fi Bushwick Schlitz.</p>
-</div>

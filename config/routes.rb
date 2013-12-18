@@ -4,5 +4,6 @@ LifeInsurance::Application.routes.draw do
 
   # post 'insurance_queries#create'
 
-  resources :insurance_queries
+  post 'insurance_queries/create', to: 'insurance_queries#create', as: 'create'
+  get  'insurance_queries/:id/', to: 'insurance_queries#show', as: 'show'
 end
